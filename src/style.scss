@@ -1,0 +1,104 @@
+$font: 'Circular Std';
+$time: 0.25s;
+
+$color--white: #FFFFFF;
+$color--black: #000000;
+
+$main--color: $color--black;
+
+
+// Main style
+body {
+    font-family: $font;
+    height: 500vh;
+}
+
+.formjs {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99900;
+  transition: all $time;
+  &__close-area {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99901;
+  }
+  &__content {
+    position: absolute;
+    z-index: 99902;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $color--white;
+    padding: 50px;
+    border-radius: 2px;
+    width: 300px;
+    opacity: 0;
+    &--header {
+      font-size: 28px;
+      font-weight: 600;
+    }
+    &--data {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+    }
+  }
+  &__footer {
+
+  }
+
+  &__call {
+
+  }
+  &__input {
+    padding: 10px;
+    font-size: 14px;
+    font-family: $font;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  &__button {
+    background-color: $main--color;
+    color: $color--white;
+    font-size: 12px;
+    border: none;
+    padding: 20px 40px;
+    font-family: $font;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    transition: all $time;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    &:hover {
+      background-color: rgba($main--color, 0.8);
+    }
+  }
+  &__hire {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+  }
+}

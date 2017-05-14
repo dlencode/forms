@@ -8,8 +8,8 @@ let nameOfForm = new Form(callSelector, formContainer, formClose, durationAnimat
 
 After this you need to call this methods:
 ```
-click();
-close();
+nameOfForm.click();
+nameOfForm.close();
 ```
 
 Also, you can call some libs for animate your form and call anchors. For init lib:

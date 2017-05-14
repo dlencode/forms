@@ -1,7 +1,7 @@
 ## Forms.js
 Created for fast init CTA button and popup form.
 
-For init form need create new exemplar of Class Form:
+For init form you need to create new exemplar of Class Form:
 ```
 let nameOfForm = new Form(callSelector, formContainer, formClose, durationAnimation);
 ```
@@ -15,5 +15,5 @@ close();
 Also, you can call some libs for animate your form and call anchors. For init lib:
 ```
 let nameOfLib = new Libs();
-animeJs.init(link, appendAfter);
+nameOfLib.init(link, appendAfter);
 ```

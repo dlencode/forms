@@ -76,15 +76,15 @@ class Form {
 }
 
 class Libs {
-  constructor(link, appendAfrer) {
+  constructor(link, appendAfter) {
     this.link = link;
-    this.appendAfrer = appendAfrer;
+    this.appendAfter = appendAfter;
   }
 
-  init(link, appendAfrer) {
+  init(link, appendAfter) {
     let script = document.createElement('script');
     script.src = link;
-    document.querySelector(appendAfrer).appendChild(script);
+    document.querySelector(appendAfter).appendChild(script);
   }
 }
 

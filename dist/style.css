@@ -14,7 +14,8 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 99900;
-  transition: all 0.25s; }
+  transition: all 0.25s;
+  display: none; }
   .formjs__close-area {
     width: 100vw;
     height: 100vh;
@@ -22,6 +23,7 @@ body {
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
     z-index: 99901; }
   .formjs__content {
     position: absolute;
